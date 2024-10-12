@@ -34,21 +34,9 @@ export const MacbookScroll = ({ src, showGradient, title, badge }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 500) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-
-    handleResize();
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+    if (window && window.innerWidth < 768) {
+      setIsMobile(true);
+    }
   }, []);
 
   const scaleX = useTransform(
@@ -61,12 +49,7 @@ export const MacbookScroll = ({ src, showGradient, title, badge }) => {
     [0, 0.3],
     [0.6, isMobile ? 1 : 1.5]
   );
-
-  const translate = useTransform(
-    scrollYProgress,
-    [0, 1],
-    [0, window.innerHeight * 1.5]
-  );
+  const translate = useTransform(scrollYProgress, [0, 1], [0, 1500]);
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
