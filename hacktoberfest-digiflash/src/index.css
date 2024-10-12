@@ -10,3 +10,12 @@
     font-style: normal;
 }
 
+
+body {
+    background-color: black;
+    
+}
+
+.inner-shadow-div {
+    box-shadow: 10rem 10rem 10rem rgba(0, 0, 0, 0.8) inset, -10rem -10rem 10rem rgba(0, 0, 0, 0.8) inset;
+}

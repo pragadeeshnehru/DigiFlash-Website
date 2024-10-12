@@ -35,7 +35,7 @@ export default function DigiFlash() {
     <img
       src={members}
       alt="Members"
-      className="rounded-2xl mx-auto relative z-10"
+      className="rounded-2xl mx-auto z-10"
     />
   </div>
 </section>
