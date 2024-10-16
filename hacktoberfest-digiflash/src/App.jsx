@@ -1,49 +1,26 @@
-import "./App.css";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Outlet } from "react-router-dom";
+import DigiFlash from "./components/sections/DigiFlash";
+import Footer from "./components/sections/Footer";
+import HeroSection from "./components/sections/HeroSection";
+import Header from "./components/sections/Header";
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    document.documentElement.classList.add("dark");
+  }, []);
+
   return (
-    <div>
-      <header className="flex flex-wrap justify-between items-center py-4 px-4 black">
-        <div className="w-full md:w-auto text-2xl font-bold text-white text-center md:text-left">
-          DigiFlash
+    <div className="absolute">
+      <Header />
+      <div className="font-display dark:bg-black dark:text-white ">
+        <div className="relative z-10">
+          <HeroSection />
         </div>
-        <nav className="w-full md:w-auto mt-4 md:mt-0">
-          <ul className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 items-center">
-            <li>
-              <Link to="/" className="text-white hover:text-gray-400">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/legacy" className="text-white hover:text-gray-400">
-                Legacy
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/hacktoberfest"
-                className="text-white hover:text-gray-400"
-              >
-                Hacktoberfest 24
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="text-white hover:text-gray-400">
-                About
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <main className="px-4">
-        <Outlet />
-      </main>
+        <div className="py-5 relative z-20 px-4 md:px-[52px] flex flex-col gap-6 md:gap-[100px] bg-[#0c0c0c]">
+          <DigiFlash />
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;

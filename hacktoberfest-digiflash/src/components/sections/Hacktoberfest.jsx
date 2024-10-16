@@ -1,4 +1,5 @@
 import Button from "../ui/glow-button";
+import Header from "./Header";
 
 export default function Hacktoberfest() {
   const details = [
@@ -52,17 +53,20 @@ export default function Hacktoberfest() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 gap-4 p-4">
-      {details.map((contest, index) => (
-        <div key={index} className="flex justify-center">
-          <ContestCards
-            title={contest.title}
-            description={contest.description}
-            image={contest.image}
-            link={contest.link}
-          />
-        </div>
-      ))}
+    <div>
+      <Header />
+      <div className="grid grid-cols-1 gap-4 p-4">
+        {details.map((contest, index) => (
+          <div key={index} className="flex justify-center">
+            <ContestCards
+              title={contest.title}
+              description={contest.description}
+              image={contest.image}
+              link={contest.link}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
