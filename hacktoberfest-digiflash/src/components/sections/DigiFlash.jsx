@@ -4,9 +4,21 @@ export default function DigiFlash() {
   return (
     <section className="bg-inherit">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-    <p className="text-[14.25px] text-customDark mb-[17px] text-center">
-      Tagline goes here...
-    </p>
+  <div className="flex flex-row justify-center items-center gap-5 w-full mb-[17px] p-8">
+  <p className="text-[14.25px] tracking-[4px] text-center">
+    WHERE
+  </p>
+  <p className="text-[14.25px] tracking-[4px] text-center text-[#5abdff]">
+    ALGORITHIMS
+  </p>
+  <p className="text-[14.25px] tracking-[4px] text-center">
+    MEET
+  </p>
+  <p className="text-[14.25px] tracking-[4px] text-center text-[#fa5959]">
+    AMBITIONS
+  </p>
+</div>
+
 
     <div className="flex flex-col md:flex-row gap-4 justify-center md:items-center items-center">
       <p className="text-[2rem] md:text-[51.08px] text-customDark font-bold text-center">

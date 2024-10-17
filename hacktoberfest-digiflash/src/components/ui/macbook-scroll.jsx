@@ -615,6 +615,7 @@ const MCETLogo = () => {
       alt="MCET Logo"
       width="70"
       height="85"
+      className="scale-[1.5] "
     />
   );
 };

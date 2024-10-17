@@ -38,7 +38,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className="flex flex-col gap-8 items-center justify-center py-8 h-auto w-full">
+    <div className="dark flex flex-col gap-8 items-center justify-center py-8 h-auto w-full">
         <h1 className="text-center">Connect with us</h1>
       <FloatingDock items={links} />
       <h1 className="text-center">© 2024 DigiFlash CSE</h1>
