@@ -1,8 +1,10 @@
+import Countdown from "../ui/countdown";
 import Button from "../ui/glow-button";
 import { TypewriterEffect } from "../ui/typewriter-effect";
 import Header from "./Header";
 
 export default function Hacktoberfest() {
+  const targetDate = "2024-10-24T00:00:00";
   const technicalEvents = [
     {
       title: "WebZilla 2.0",
@@ -137,14 +139,16 @@ export default function Hacktoberfest() {
   ];
 
   return (
-    <div className="font-display">
+    <div className="font-display text-white bg-gradient-to-b from-[#04071d] to-[#2e0000]">
       <Header />
       <div className="p-8 flex flex-col justify-center text-center">
-        <TypewriterEffect words={words} className={"dark"}/>
-        <p>Department of CSE</p>
+        <TypewriterEffect words={words} className={"dark py-4"}/>
+        <p className="py-8">Join us for Hacktoberfest 2024, an exciting intra-college symposium organized by the Computer Science Association! This event is a perfect blend of technical and non-technical activities, designed to showcase innovation, creativity, and collaboration among students. </p>
+        <p className="py-4">24th October 2024</p>
+        <Countdown targetDate={targetDate}/>
       </div>
 
-      <p className="text-white text-2xl text-center p-4">Technical Events</p>
+      <p className="text-[#1ce4ff] text-2xl text-center p-4">Technical Events</p>
       <div className="grid grid-cols-1 gap-4 p-8">
         {technicalEvents.map((contest, index) => (
           <div key={index} className="flex justify-center">
@@ -157,10 +161,10 @@ export default function Hacktoberfest() {
           </div>
         ))}
       </div>
-      <p className="text-white text-2xl text-center p-4">
+      <p className="text-[#fa4f4f] text-2xl text-center p-4">
         Non Technical Events
       </p>
-      <div className="grid grid-cols-1 gap-4 p-4">
+      <div className="grid grid-cols-1 gap-4 p-8">
         {nonTechnical.map((contest, index) => (
           <div key={index} className="flex justify-center">
             <ContestCards

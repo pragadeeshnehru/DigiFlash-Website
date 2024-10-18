@@ -37,7 +37,7 @@ export default function About() {
 
   const magTeam = [
     {
-      imageUrl: "/team/enpa.jpg",
+      imageUrl: "/team/nandhini.jpg",
       name: "Kirubaa Nandhini P A",
     },
     {
@@ -70,7 +70,7 @@ export default function About() {
         ))}
       </div>
       <p className="text-2xl font-bold text-center mt-8">
-        Newsletter & Magazine Coordinators
+        Digitimes Coordinators
       </p>
       <div className="flex flex-wrap justify-center gap-6 p-4">
         {magTeam.map((member, index) => (
@@ -83,6 +83,10 @@ export default function About() {
         ))}
       </div>
       <Footer />
+      <p className="text-center py-8">
+        Done by{" "}
+        <a href="https://github.com/pragadeeshnehru">Pragadeesh Nehru</a> 😎
+      </p>
     </div>
   );
 }
