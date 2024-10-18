@@ -1,5 +1,5 @@
 import { MacbookScroll } from "../ui/macbook-scroll";
-import digiLogo from "../../assets/linear.png";
+import digiLogo from "../../assets/linear.jpg";
 
 export default function HeroSection() {
   return (

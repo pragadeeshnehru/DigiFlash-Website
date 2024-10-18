@@ -135,20 +135,26 @@ export default function Hacktoberfest() {
       text: "Hacktoberfest'24",
       className: "text-blue-500 dark:text-blue-500",
     },
-
   ];
 
   return (
     <div className="font-display text-white bg-gradient-to-b from-[#04071d] to-[#2e0000]">
       <Header />
-      <div className="p-8 flex flex-col justify-center text-center">
-        <TypewriterEffect words={words} className={"dark py-4"}/>
-        <p className="py-8">Join us for Hacktoberfest 2024, an exciting intra-college symposium organized by the Computer Science Association! This event is a perfect blend of technical and non-technical activities, designed to showcase innovation, creativity, and collaboration among students. </p>
+      <div className="p-8 flex flex-col justify-center text-center py-8">
+        <TypewriterEffect words={words} className={"dark py-4"} />
+        <p className="py-8">
+          Join us for Hacktoberfest 2024, an exciting intra-college symposium
+          organized by the Computer Science Association! This event is a perfect
+          blend of technical and non-technical activities, designed to showcase
+          innovation, creativity, and collaboration among students.{" "}
+        </p>
         <p className="py-4">24th October 2024</p>
-        <Countdown targetDate={targetDate}/>
+        <Countdown targetDate={targetDate} />
       </div>
 
-      <p className="text-[#1ce4ff] text-2xl text-center p-4">Technical Events</p>
+      <p className="text-[#1ce4ff] text-2xl text-center p-4">
+        Technical Events
+      </p>
       <div className="grid grid-cols-1 gap-4 p-8">
         {technicalEvents.map((contest, index) => (
           <div key={index} className="flex justify-center">
@@ -184,7 +190,11 @@ function ContestCards({ title, description, image, link }) {
   return (
     <div className="w-full flex flex-col sm:flex-row max-w-full text-white border rounded-lg shadow bg-[#0f0f0f] border-gray-700">
       <div className="w-full">
-        <img className="rounded-t-lg w-full h-full object-cover" src={image} alt="" />
+        <img
+          className="rounded-t-lg w-full h-full object-cover"
+          src={image}
+          alt=""
+        />
       </div>
       <div className="p-5 w-full">
         <a href="#">
