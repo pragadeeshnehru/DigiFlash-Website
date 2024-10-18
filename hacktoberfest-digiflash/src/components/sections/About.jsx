@@ -49,7 +49,7 @@ export default function About() {
   return (
     <div className="font-display text-white">
       <Header />
-      <div className="bg-gradient-to-r from-green-400 to-orange-500 text-transparent bg-clip-text">
+      <div className="text-[#0076fd]">
         <h1 className="text-6xl font-bold text-center mt-8">ABOUT US</h1>
       </div>
 

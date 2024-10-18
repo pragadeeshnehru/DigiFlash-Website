@@ -46,7 +46,7 @@ export default function Hacktoberfest() {
         It will be a paper pen test. Based on the marking criteria, winners will be chosen.</p>
       `,
       image: "/events/coder.jpg",
-      link: "https://google.com"
+      link: "https://google.com",
     },
     {
       title: "Paper Pulse",
@@ -158,9 +158,9 @@ export default function Hacktoberfest() {
   ];
 
   return (
-    <div className="font-display text-white bg-gradient-to-b from-[#04071d] to-[#27001b]">
+    <div className="font-display text-white bg-gradient-to-b from-black via-[#070049] to-[#27001b]">
       <Header />
-      <div className="p-8 flex flex-col justify-center text-center py-8">
+      <div className="p-8 flex flex-col justify-center text-center">
         <TypewriterEffect words={words} className={"dark py-4"} />
         <p className="py-8">
           Join us for Hacktoberfest 2024, an exciting intra-college symposium
@@ -202,7 +202,7 @@ export default function Hacktoberfest() {
           </div>
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
