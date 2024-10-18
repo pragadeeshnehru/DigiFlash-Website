@@ -42,6 +42,10 @@ export default function Footer() {
         <h1 className="text-center">Connect with us</h1>
       <FloatingDock items={links} />
       <h1 className="text-center">© 2024 DigiFlash CSE</h1>
+      <p className="text-center py-8">
+        Done by{" "}
+        <a href="https://github.com/pragadeeshnehru">Pragadeesh Nehru</a> 😎
+      </p>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import Countdown from "../ui/countdown";
 import Button from "../ui/glow-button";
 import { TypewriterEffect } from "../ui/typewriter-effect";
+import Footer from "./Footer";
 import Header from "./Header";
 
 export default function Hacktoberfest() {
@@ -19,7 +20,34 @@ export default function Hacktoberfest() {
       image: "/events/webdesign.avif",
       link: "https://google.com",
     },
-
+    {
+      title: "Return of the Coder",
+      description: `
+        <p>Return of the Coder is an exciting coding event designed to celebrate programming skills
+        and foster collaboration among students. Participants will engage in a series of challenges,
+        including problem solving, debugging, and description writing. Whether you're a seasoned
+        coder or just starting out, this event offers a platform for skill development, networking, and
+        fun. Join us for a day of creativity, problem-solving, and camaraderie in the world of coding!</p>
+    
+        <strong>Guidelines:</strong>
+        <ul>
+          <li>Registration is mandatory before the event.</li>
+          <li>Participants must be individual.</li>
+        </ul>
+    
+        <strong>There are two rounds in this event:</strong>
+        
+        <strong>Round 1:</strong>
+        <p>In this round, there are 2 problem-solving questions. Using any IDE, participants have to solve them. 
+        Afterward, there will be 10 minutes for evaluation and result announcements.</p>
+        
+        <strong>Round 2:</strong>
+        <p>This round includes 3 questions in total: one for debugging and two for finding the description of the given code (problem or question). 
+        It will be a paper pen test. Based on the marking criteria, winners will be chosen.</p>
+      `,
+      image: "/events/coder.jpg",
+      link: "https://google.com"
+    },
     {
       title: "Paper Pulse",
       description: `
@@ -36,9 +64,9 @@ export default function Hacktoberfest() {
       link: "https://google.com",
     },
     {
-      title: "Top Coder Dupe Coder",
+      title: "Trace the Bug",
       description: `
-        Top Coder Dupe Coder is a team-based coding competition where teams of two will tackle a variety of programming challenges. The event spans three distinct rounds, each testing different aspects of coding skills. Whether you're a beginner or have some experience, this competition is a great way to improve, collaborate, and showcase your coding abilities.<br/><br/>
+        Trace the Bug is a team-based coding competition where teams of two will tackle a variety of programming challenges. The event spans three distinct rounds, each testing different aspects of coding skills. Whether you're a beginner or have some experience, this competition is a great way to improve, collaborate, and showcase your coding abilities.<br/><br/>
         <strong>Rounds:</strong><br/>
         1. <strong>Round 1:</strong> A technical quiz assessing fundamental programming concepts.<br/>
         2. <strong>Round 2:</strong> Debugging code and predicting its output accurately.<br/>
@@ -51,13 +79,13 @@ export default function Hacktoberfest() {
         5. <strong>Conduct:</strong> Dishonest behavior or rule violations will result in disqualification.<br/>
         6. <strong>Awards:</strong> Teams with the highest overall performance will receive prizes and recognition.
       `,
-      image: "/events/coder.jpg",
+      image: "/events/coder1.jpg",
       link: "https://google.com",
     },
     {
-      title: "Connectix",
+      title: "Code-Link",
       description: `
-        Collaborate, innovate, and showcase your technical expertise in our thrilling Tech Connect Challenge! Team up with a partner and tackle three exciting rounds to prove your skills in this dynamic event.<br/><br/>
+        Collaborate, innovate, and showcase your technical expertise in our thrilling  Challenge! Team up with a partner and tackle three exciting rounds to prove your skills in this dynamic event.<br/><br/>
         <strong>Event Rounds:</strong><br/>
         1. <strong>Round 1 - Tech Quiz:</strong> Test your knowledge in a rapid-fire technical quiz, covering programming languages.<br/>
         2. <strong>Round 2 - Website Game:</strong> Navigate a live website, solve puzzles, and complete challenges to demonstrate your problem-solving skills.<br/>
@@ -73,7 +101,7 @@ export default function Hacktoberfest() {
 
   const nonTechnical = [
     {
-      title: "Thirai Thiruvizha",
+      title: "Screen Sparks",
       description: `
         Thirai Thiruvizha is an exciting cinema-based competition uniting movie enthusiasts from diverse backgrounds. The event aims to test participants' knowledge, creativity, and passion for films. Teams of 2 members will navigate through three challenging rounds, showcasing their expertise in Tamil and international cinema.<br/><br/>
         <strong>Rules:</strong><br/>
@@ -90,23 +118,7 @@ export default function Hacktoberfest() {
       link: "https://google.com",
     },
     {
-      title: "Fun Zone",
-      description: `
-        Fun Zone is an exhilarating, fast-paced competition designed to test participants' knowledge, memory, and quick thinking. Bringing together enthusiasts from diverse fields, the event challenges competitors to identify brands, decode meanings, and recall images with precision. Teams of 2 members will navigate through three fun and interactive rounds, showcasing their intellectual prowess and teamwork.<br/><br/>
-        <strong>Rules:</strong><br/>
-        1. Registration is mandatory before the event.<br/>
-        2. Teams must consist of exactly 2 members.<br/>
-        3. The first 35 registered teams will be accepted on a first-come, first-served basis.<br/><br/>
-        <strong>Event Rounds:</strong><br/>
-        1. <strong>Round 1 - Brand Blitz:</strong> Teams will be shown a series of brand logos, and participants must identify the correct company associated with each logo. The top 16 teams with the highest scores will advance to the next round.<br/>
-        2. <strong>Round 2 - Word Whiz:</strong> In this round, participants must find the meaning of difficult or obscure words, either displayed or spelled out loud. The top 8 teams from Round 1 will compete, and those who can crack the toughest words with accuracy will move forward.<br/>
-        3. <strong>Round 3 - Picture Memory Game:</strong> Teams will be shown a set of images for 1 minute. Afterward, they will be asked 6 to 7 questions based on the displayed images. The team with the best memory and attention to detail will stand out and claim the ultimate victory.
-      `,
-      image: "/events/fun.png",
-      link: "https://google.com",
-    },
-    {
-      title: "Photography Competition",
+      title: "Frozen Pixels",
       description: `
         Participants will be selected in a single photography round. The photo should be taken within the college based on the theme mentioned below. Photos can be uploaded to the form sent 2 days before the event. Registration is based on a first-come, first-served basis, with a maximum of 20 teams. Showcase your photographic prowess and immortalize the beauty of our college through your lens.<br/><br/>
         <strong>Rules:</strong><br/>
@@ -132,13 +144,21 @@ export default function Hacktoberfest() {
       text: "to",
     },
     {
-      text: "Hacktoberfest'24",
+      text: "Hacktober",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+    {
+      text: "Fest",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+    {
+      text: "2K24",
       className: "text-blue-500 dark:text-blue-500",
     },
   ];
 
   return (
-    <div className="font-display text-white bg-gradient-to-b from-[#04071d] to-[#2e0000]">
+    <div className="font-display text-white bg-gradient-to-b from-[#04071d] to-[#27001b]">
       <Header />
       <div className="p-8 flex flex-col justify-center text-center py-8">
         <TypewriterEffect words={words} className={"dark py-4"} />
@@ -182,6 +202,7 @@ export default function Hacktoberfest() {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 }

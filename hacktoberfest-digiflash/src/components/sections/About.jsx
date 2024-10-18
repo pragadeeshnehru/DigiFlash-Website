@@ -26,7 +26,7 @@ export default function About() {
     {
       imageUrl: "/team/udhayan.jpg",
       name: "Udhayan S",
-      designation: "Treasure",
+      designation: "Treasurer",
     },
     {
       imageUrl: "/team/enpa.jpg",
@@ -83,10 +83,7 @@ export default function About() {
         ))}
       </div>
       <Footer />
-      <p className="text-center py-8">
-        Done by{" "}
-        <a href="https://github.com/pragadeeshnehru">Pragadeesh Nehru</a> 😎
-      </p>
+      
     </div>
   );
 }

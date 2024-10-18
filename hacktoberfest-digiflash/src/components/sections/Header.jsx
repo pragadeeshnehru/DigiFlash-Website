@@ -8,30 +8,30 @@ export default function Header() {
         </div>
         <nav className="w-full md:w-auto mt-6 md:mt-0">
           <ul className="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0 items-center">
-            <li>
+            {/* <li>
               <Link
                 to="/"
                 className="text-lg md:text-xl hover:text-gray-600 transition"
               >
                 Home
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link
                 to="/legacy"
                 className="text-lg md:text-xl hover:text-gray-600 transition"
               >
                 Legacy
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link
                 to="/hacktoberfest"
                 className="text-lg md:text-xl hover:text-gray-600 transition"
               >
                 Hacktoberfest 24
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="/about"

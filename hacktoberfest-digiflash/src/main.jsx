@@ -12,9 +12,9 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route index element={<App />} />
-        <Route path="/legacy" element={<Legacy />} />
-        <Route path="/hacktoberfest" element={<Hacktoberfest />} />
+        {/* <Route index element={<App />} /> */}
+        {/* <Route path="/legacy" element={<Legacy />} /> */}
+        <Route index element={<Hacktoberfest />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
