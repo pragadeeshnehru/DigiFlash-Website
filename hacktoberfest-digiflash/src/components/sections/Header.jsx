@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed font-display w-full z-20 flex flex-wrap justify-between items-center py-1 px-6 md:py-4 md:px-8 transition-all duration-300 ${
+      className={`fixed font-display w-full z-20 flex flex-wrap justify-between items-center py-4 px-6 md:py-4 md:px-8 transition-all duration-300 ${
         scrollY > 0 ? "bg-black" : "bg-transparent"
       } text-white`}
     >
