@@ -172,22 +172,22 @@ export default function Hacktoberfest() {
   const words = [
     {
       text: "HACKTOBER",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "dark:text-[#6ecbf5] ",
     },
     {
       text: "FEST",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "dark:text-[#6ecbf5] ",
     },
     {
       text: "2K24",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "dark:text-[#6ecbf5] ",
     },
   ];
 
   return (
-    <div className="font-display text-white bg-gradient-to-br from-[#0a3447]  to-[#b785d8]">
+    <div className="font-display text-white bg-gradient-to-br from-[#01012b]  to-[#ed1e79]">
       <Header />
-      <div className="p-8 pt-32 flex flex-col justify-center text-center">
+      <div className="p-8 pt-32 flex flex-col justify-center text-center ">
         <TypewriterEffect
           words={words}
           className={"dark py-4 font-extrabold"}
@@ -199,12 +199,12 @@ export default function Hacktoberfest() {
           innovation, creativity, and collaboration among students.{" "}
         </p>
 
-        <p className="py-4">24th October 2024</p>
+        <p className="py-4 ">24th October 2024</p>
 
         <Countdown targetDate={targetDate} />
       </div>
 
-      <p className="text-[#1ce4ff] text-2xl text-center p-4">
+      <p className="text-[#1ce4ff] text-2xl text-center p-4 glow">
         Technical Events
       </p>
       <div className="grid grid-cols-1 gap-4 p-8">
@@ -219,7 +219,7 @@ export default function Hacktoberfest() {
           </div>
         ))}
       </div>
-      <p className="text-[#fa4f4f] text-2xl text-center p-4">
+      <p className="text-[#1ce4ff] text-2xl text-center p-4 glow">
         Non Technical Events
       </p>
 

@@ -12,9 +12,27 @@
 
 
 body {
-    background-color: black; 
+    background-color: black;
 }
 
 .inner-shadow-div {
     box-shadow: 10rem 10rem 10rem rgba(0, 0, 0, 0.8) inset, -10rem -10rem 10rem rgba(0, 0, 0, 0.8) inset;
+}
+
+.glow {
+    color: #00f7ff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00dee6, 0 0 40px #00dee6, 0 0 50px #00dee6, 0 0 60px #00dee6, 0 0 70px #00dee6;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #00dee6, 0 0 40px #00dee6, 0 0 50px #00dee6, 0 0 60px #00dee6, 0 0 70px #00dee6, 0 0 80px #00dee6;
+    }
 }
