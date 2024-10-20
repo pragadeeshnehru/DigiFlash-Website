@@ -49,7 +49,7 @@ export default function About() {
   return (
     <div className="font-display text-white">
       <Header />
-      <div className="text-[#0076fd]">
+      <div className="pt-32 text-[#0076fd]">
         <h1 className="text-6xl font-bold text-center mt-8">ABOUT US</h1>
       </div>
 

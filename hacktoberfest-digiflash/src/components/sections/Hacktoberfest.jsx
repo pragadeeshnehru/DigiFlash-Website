@@ -1,8 +1,41 @@
+import { useEffect, useRef, useState } from "react";
 import Countdown from "../ui/countdown";
 import Button from "../ui/glow-button";
 import { TypewriterEffect } from "../ui/typewriter-effect";
 import Footer from "./Footer";
 import Header from "./Header";
+import { BackgroundBeams } from "../ui/background-beams";
+
+const RevealOnScroll = ({ children }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const scrollObserver = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+        scrollObserver.unobserve(entry.target);
+      }
+    });
+
+    scrollObserver.observe(ref.current);
+
+    return () => {
+      if (ref.current) {
+        scrollObserver.unobserve(ref.current);
+      }
+    };
+  }, []);
+
+  const classes = `transition-opacity duration-1000
+      ${isVisible ? "opacity-100" : "opacity-0"}`;
+
+  return (
+    <div ref={ref} className={classes}>
+      {children}
+    </div>
+  );
+};
 
 export default function Hacktoberfest() {
   const targetDate = "2024-10-24T00:00:00";
@@ -138,17 +171,11 @@ export default function Hacktoberfest() {
 
   const words = [
     {
-      text: "Welcome",
-    },
-    {
-      text: "to",
-    },
-    {
-      text: "Hacktober",
+      text: "HACKTOBER",
       className: "text-blue-500 dark:text-blue-500",
     },
     {
-      text: "Fest",
+      text: "FEST",
       className: "text-blue-500 dark:text-blue-500",
     },
     {
@@ -158,17 +185,22 @@ export default function Hacktoberfest() {
   ];
 
   return (
-    <div className="font-display text-white bg-gradient-to-b from-black via-[#070049] to-[#27001b]">
+    <div className="font-display text-white bg-gradient-to-br from-[#0a3447]  to-[#b785d8]">
       <Header />
-      <div className="p-8 flex flex-col justify-center text-center">
-        <TypewriterEffect words={words} className={"dark py-4"} />
+      <div className="p-8 pt-32 flex flex-col justify-center text-center">
+        <TypewriterEffect
+          words={words}
+          className={"dark py-4 font-extrabold"}
+        />
         <p className="py-8">
-          Join us for Hacktoberfest 2024, an exciting intra-college symposium
+          Join us for Hacktober Fest 2024, an exciting intra-college symposium
           organized by the Computer Science Association! This event is a perfect
           blend of technical and non-technical activities, designed to showcase
           innovation, creativity, and collaboration among students.{" "}
         </p>
+
         <p className="py-4">24th October 2024</p>
+
         <Countdown targetDate={targetDate} />
       </div>
 
@@ -190,6 +222,7 @@ export default function Hacktoberfest() {
       <p className="text-[#fa4f4f] text-2xl text-center p-4">
         Non Technical Events
       </p>
+
       <div className="grid grid-cols-1 gap-4 p-8">
         {nonTechnical.map((contest, index) => (
           <div key={index} className="flex justify-center">
@@ -202,6 +235,7 @@ export default function Hacktoberfest() {
           </div>
         ))}
       </div>
+      <BackgroundBeams />
       <Footer />
     </div>
   );
@@ -209,6 +243,7 @@ export default function Hacktoberfest() {
 
 function ContestCards({ title, description, image, link }) {
   return (
+    <RevealOnScroll>
     <div className="w-full flex flex-col sm:flex-row max-w-full text-white border rounded-lg shadow bg-[#0f0f0f] border-gray-700">
       <div className="w-full">
         <img
@@ -232,5 +267,6 @@ function ContestCards({ title, description, image, link }) {
         </a>
       </div>
     </div>
+    </RevealOnScroll>
   );
 }

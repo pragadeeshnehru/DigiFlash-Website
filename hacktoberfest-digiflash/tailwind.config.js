@@ -11,11 +11,25 @@ export default {
   darkMode: "class",
   theme: {
     fontFamily: {
-      display: ["Jetbrains Mono","regular"],
+      display: ["Jetbrains Mono", "regular"],
     },
-    extend: {},
+    extend: {
+      animation: {
+        aurora: "aurora 60s linear infinite",
+      },
+      keyframes: {
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
+      },
+    },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
 
 function addVariablesForColors({ addBase, theme }) {
