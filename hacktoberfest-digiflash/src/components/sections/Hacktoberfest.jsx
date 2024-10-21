@@ -39,7 +39,7 @@ const RevealOnScroll = ({ children }) => {
 };
 
 export default function Hacktoberfest() {
-  const targetDate = "2024-10-24T00:00:00";
+  const targetDate = "2024-10-24T09:00:00";
   const technicalEvents = [
     {
       title: "WebZilla 2.0",
@@ -48,7 +48,7 @@ export default function Hacktoberfest() {
           <strong>Guidelines:</strong><br/>
           1. <strong>Team Size:</strong> Induvidual participation.<br/>
           2. <strong>Coding Format:</strong> Develop a web page using the provided images and any web technology (HTML, CSS, JavaScript).<br/>
-          3. <strong>Time:</strong> 1 hour for coding, followed by presentation and Q&A.<br/>
+          3. <strong>Time:</strong> 2 hours for coding, followed by presentation and Q&A session.<br/>
           4. <strong>Judging Criteria:</strong> Creativity, functionality, collaboration, and presentation.
         `,
       image: "/events/webdesign.avif",
@@ -69,16 +69,6 @@ export default function Hacktoberfest() {
           <li>Registration is mandatory before the event.</li>
           <li>Participants must be individual.</li>
         </ul>
-    
-        <strong>There are two rounds in this event:</strong>
-        
-        <strong>Round 1:</strong>
-        <p>In this round, there are 2 problem-solving questions. Using any IDE, participants have to solve them. 
-        Afterward, there will be 10 minutes for evaluation and result announcements.</p>
-        
-        <strong>Round 2:</strong>
-        <p>This round includes 3 questions in total: one for debugging and two for finding the description of the given code (problem or question). 
-        It will be a paper pen test. Based on the marking criteria, winners will be chosen.</p>
       `,
       image: "/events/coder.jpg",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSdFeclCipPox6cLmWwRBEK3Qt0mWMUP1dsuqA74sfhHmqOf5Q/viewform",
@@ -91,8 +81,8 @@ export default function Hacktoberfest() {
         <strong>Guidelines:</strong><br/>
         1. <strong>Team Size:</strong> Maximum of 2 participants per team.<br/>
         2. <strong>Presentation Time:</strong> 8-10 minutes, followed by a 2-minute Q&A session.<br/>
-        3. <strong>Format:</strong> Presentations must be in PPT format. 8-10 slides<br/>
-        4. <strong>Originality:</strong> Content must be original; plagiarism will lead to disqualification.<br/>
+        3. <strong>Format:</strong> Presentations must be in PPT format. 10-15 slides<br/>
+        4. <strong>Originality:</strong> Content must be original, plagiarism will lead to disqualification.<br/>
         5. <strong>Technical Setup:</strong> Participants must bring their presentation on a USB drive or email it in advance.<br/>
         6. <strong>Judging Criteria:</strong> Evaluation will be based on content, clarity, innovation, and presentation skills.
       `,
@@ -104,10 +94,6 @@ export default function Hacktoberfest() {
       title: "Trace the Bug",
       description: `
         Trace the Bug is a team-based coding competition where teams of two will tackle a variety of programming challenges. The event spans three distinct rounds, each testing different aspects of coding skills. Whether you're a beginner or have some experience, this competition is a great way to improve, collaborate, and showcase your coding abilities.<br/><br/>
-        <strong>Rounds:</strong><br/>
-        1. <strong>Round 1:</strong> A technical quiz assessing fundamental programming concepts.<br/>
-        2. <strong>Round 2:</strong> Debugging code and predicting its output accurately.<br/>
-        3. <strong>Round 3:</strong> Developing a solution to a real-world problem using programming.<br/><br/>
         <strong>Rules:</strong><br/>
         1. <strong>Eligibility:</strong> Open to teams of two participants with basic programming knowledge. Limited to first 30 teams<br/>
         2. <strong>Languages:</strong> Participants are free to use any programming language they are comfortable with.<br/>
@@ -124,10 +110,6 @@ export default function Hacktoberfest() {
       title: "Code Link",
       description: `
         Collaborate, innovate, and showcase your technical expertise in our thrilling  Challenge! Team up with a partner and tackle three exciting rounds to prove your skills in this dynamic event.<br/><br/>
-        <strong>Event Rounds:</strong><br/>
-        1. <strong>Round 1 - Tech Quiz:</strong> Test your knowledge in a rapid-fire technical quiz, covering programming languages.<br/>
-        2. <strong>Round 2 - Crossword Puzzle:</strong> In this challenge, you will navigate a crossword puzzle to test your general technical knowledge. The objective is to find the answer in the grid with the question and clues given below, ensuring that the words correctly.<br/>
-        3. <strong>Round 3 - Technical Connection:</strong> In this challenge, you will participate in a Connection Event designed to enhance your networking skills, foster collaboration, and solve problems through interactive activities. The objective is to engage with other participants, share insights, and work together to tackle challenges that promote teamwork and creativity.<br/><br/>
         <strong>Guidelines:</strong><br/>
         1. <strong>Team Size:</strong> Maximum of 2 participants.<br/>
         2. <strong>Registration:</strong> Pre-registration is required for participation.
@@ -147,11 +129,7 @@ export default function Hacktoberfest() {
         1. Registration is mandatory before the event.<br/>
         2. Teams must consist of exactly 2 members.<br/>
         3. The first 30 registered teams will be accepted on a first-come, first-served basis.<br/><br/>
-        <strong>Event Rounds:</strong><br/>
-        1. <strong>Round 1 - Quizizz:</strong> An online quiz where the top 16 teams with the highest Quizizz scores advance.<br/>
-        2. <strong>Round 2 - Picture Perfect:</strong> One-on-one picture representation where the top 8 teams from Round 1 participate.<br/>
-        3. <strong>Round 3 - Quick Cuts:</strong> Given a set of constraints, list the maximum number of movies within 15 seconds. The top 8 teams from Round 2 compete in Quick Cuts.<br/><br/>
-        Winners will be determined by jury scores.
+        4. Winners will be determined by jury scores.<br/>
       `,
       image: "/events/cinema.png",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSeaXOGRIQeQojCEdZqJASbIJRyYGQpUpE8ZECQTtZ8FJn1iQg/viewform",
@@ -162,7 +140,7 @@ export default function Hacktoberfest() {
       description: `
         Participants will be selected in a single photography round. The photo should be taken within in the college based on the theme mentioned above. The photo can be uploaded to the form which will be sent before the event. The registration is based on the First come , First serve basis. First 40 participants are allowed to participate.Showcase your photographic prowess and immortalize the beauty of our college through your lens.<br/><br/>
         <strong>Rules:</strong><br/>
-        1) <strong>Submission:</strong> Participants should submit only one photo within the given deadline.<br/>
+        1) <strong>Submission:</strong> Participants should submit only one photo within the given deadline (23/10/2024 10:00 pm).<br/>
         2) <strong>Originality:</strong> All photographs must be your original work. Plagiarism will lead to disqualification.<br/>
         3) <strong>Judging Criteria:</strong> Photographs will be judged based on composition, creativity, technical skill, and overall impact.<br/><br/>
         <strong>Themes:</strong><br/>
@@ -198,10 +176,10 @@ export default function Hacktoberfest() {
           className={"dark py-4 font-extrabold"}
         />
         <p className="py-8">
-          Join us for Hacktober Fest 2024, an exciting intra-college symposium
-          organized by the Computer Science Association! This event is a perfect
-          blend of technical and non-technical activities, designed to showcase
-          innovation, creativity, and collaboration among students.{" "}
+          Join us for Hacktober Fest-2K24, an exciting intra-college symposium
+          organized by Digiflash the Computer Science Association! This event is
+          a perfect blend of technical and non-technical activities, designed to
+          showcase innovation, creativity, and collaboration among students.{" "}
         </p>
 
         <p className="py-4 ">24th October 2024</p>
