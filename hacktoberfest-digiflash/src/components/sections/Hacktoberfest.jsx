@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import Modal from "react-modal";
 import Countdown from "../ui/countdown";
 import Button from "../ui/glow-button";
 import { TypewriterEffect } from "../ui/typewriter-effect";
@@ -45,13 +46,14 @@ export default function Hacktoberfest() {
       description: `
           Showcase your skills in coding, creativity, and problem-solving! Build a functional web application using the provided images and tackle real-time spot questions. Collaborate with your teammate to deliver an innovative solution in this dynamic event.<br/><br/>
           <strong>Guidelines:</strong><br/>
-          1. <strong>Team Size:</strong> Maximum of 2 participants.<br/>
+          1. <strong>Team Size:</strong> Induvidual participation.<br/>
           2. <strong>Coding Format:</strong> Develop a web page using the provided images and any web technology (HTML, CSS, JavaScript).<br/>
           3. <strong>Time:</strong> 1 hour for coding, followed by presentation and Q&A.<br/>
           4. <strong>Judging Criteria:</strong> Creativity, functionality, collaboration, and presentation.
         `,
       image: "/events/webdesign.avif",
-      link: "https://google.com",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScEAu5bdXithiBXJrHMwVIKAoqASd5vsPZ6zgKo5HnD6CFGIA/viewform",
+      poster: "/events/posters/webzilla.jpeg",
     },
     {
       title: "Return of the Coder",
@@ -79,7 +81,8 @@ export default function Hacktoberfest() {
         It will be a paper pen test. Based on the marking criteria, winners will be chosen.</p>
       `,
       image: "/events/coder.jpg",
-      link: "https://google.com",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdFeclCipPox6cLmWwRBEK3Qt0mWMUP1dsuqA74sfhHmqOf5Q/viewform",
+      poster: "/events/posters/return of coder.jpeg",
     },
     {
       title: "Paper Pulse",
@@ -94,7 +97,8 @@ export default function Hacktoberfest() {
         6. <strong>Judging Criteria:</strong> Evaluation will be based on content, clarity, innovation, and presentation skills.
       `,
       image: "/events/paper.jpg",
-      link: "https://google.com",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSeXpl7oSW6EVUcE7hZruEvMPgM5GfNukJZTdcBs89wJ0X6Wqw/viewform",
+      poster: "/events/posters/paper pulse.jpeg",
     },
     {
       title: "Trace the Bug",
@@ -105,18 +109,19 @@ export default function Hacktoberfest() {
         2. <strong>Round 2:</strong> Debugging code and predicting its output accurately.<br/>
         3. <strong>Round 3:</strong> Developing a solution to a real-world problem using programming.<br/><br/>
         <strong>Rules:</strong><br/>
-        1. <strong>Eligibility:</strong> Open to teams of two participants with basic programming knowledge.<br/>
+        1. <strong>Eligibility:</strong> Open to teams of two participants with basic programming knowledge. Limited to first 30 teams<br/>
         2. <strong>Languages:</strong> Participants are free to use any programming language they are comfortable with.<br/>
         3. <strong>Submission:</strong> All solutions must be submitted within the allocated time for each round.<br/>
         4. <strong>Judging Criteria:</strong> Correctness, efficiency of code, and submission time.<br/>
         5. <strong>Conduct:</strong> Dishonest behavior or rule violations will result in disqualification.<br/>
         6. <strong>Awards:</strong> Teams with the highest overall performance will receive prizes and recognition.
       `,
-      image: "/events/coder1.jpg",
-      link: "https://google.com",
+      image: "/events/bug.png",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScb99Q7QX5ZhUS_Pia7jelp-owzqoYqSLf-ANGBcpJRG533hQ/viewform",
+      poster: "/events/posters/Trace the bug.jpeg",
     },
     {
-      title: "Code-Link",
+      title: "Code Link",
       description: `
         Collaborate, innovate, and showcase your technical expertise in our thrilling  Challenge! Team up with a partner and tackle three exciting rounds to prove your skills in this dynamic event.<br/><br/>
         <strong>Event Rounds:</strong><br/>
@@ -128,7 +133,8 @@ export default function Hacktoberfest() {
         2. <strong>Registration:</strong> Pre-registration is required for participation.
       `,
       image: "/events/connect.jpg",
-      link: "https://google.com",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdQp5VMp2zgg4pxioz2BLCoVmrzRxWyQC02S8RZCLxdq2F0qw/viewform",
+      poster: "/events/posters/code link.jpeg",
     },
   ];
 
@@ -136,19 +142,20 @@ export default function Hacktoberfest() {
     {
       title: "Screen Sparks",
       description: `
-        Thirai Thiruvizha is an exciting cinema-based competition uniting movie enthusiasts from diverse backgrounds. The event aims to test participants' knowledge, creativity, and passion for films. Teams of 2 members will navigate through three challenging rounds, showcasing their expertise in Tamil and international cinema.<br/><br/>
+        Screen Sparks is an exciting cinema-based competition uniting movie enthusiasts from diverse backgrounds. The event aims to test participants' knowledge, creativity, and passion for films. Teams of 2 members will navigate through three challenging rounds, showcasing their expertise in Tamil and international cinema.<br/><br/>
         <strong>Rules:</strong><br/>
         1. Registration is mandatory before the event.<br/>
         2. Teams must consist of exactly 2 members.<br/>
-        3. The first 35 registered teams will be accepted on a first-come, first-served basis.<br/><br/>
+        3. The first 30 registered teams will be accepted on a first-come, first-served basis.<br/><br/>
         <strong>Event Rounds:</strong><br/>
         1. <strong>Round 1 - Quizizz:</strong> An online quiz where the top 16 teams with the highest Quizizz scores advance.<br/>
         2. <strong>Round 2 - Picture Perfect:</strong> One-on-one picture representation where the top 8 teams from Round 1 participate.<br/>
         3. <strong>Round 3 - Quick Cuts:</strong> Given a set of constraints, list the maximum number of movies within 15 seconds. The top 8 teams from Round 2 compete in Quick Cuts.<br/><br/>
         Winners will be determined by jury scores.
       `,
-      image: "/events/cinema.jpg",
-      link: "https://google.com",
+      image: "/events/cinema.png",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSeaXOGRIQeQojCEdZqJASbIJRyYGQpUpE8ZECQTtZ8FJn1iQg/viewform",
+      poster: "/events/posters/screen sparks.jpeg",
     },
     {
       title: "Frozen Pixels",
@@ -165,29 +172,28 @@ export default function Hacktoberfest() {
         - <strong>Circuit Stream:</strong> DIY Electronics or Own Gadgets
       `,
       image: "/events/camera.jpg",
-      link: "https://google.com",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScly7T4pCTywX13Uf439qMS5YaR6MwP18VylwH80BbBg7oUMw/viewform",
+      poster: "/events/posters/frozen pixels.jpeg",
     },
   ];
 
   const words = [
     {
       text: "HACKTOBER",
-      className: "dark:text-[#6ecbf5] ",
     },
     {
       text: "FEST",
-      className: "dark:text-[#6ecbf5] ",
     },
     {
       text: "2K24",
-      className: "dark:text-[#6ecbf5] ",
+      className: "text-[#2fceee] glow",
     },
   ];
 
   return (
     <div className="font-display text-white bg-gradient-to-br from-[#01012b]  to-[#ed1e79]">
       <Header />
-      <div className="p-8 pt-32 flex flex-col justify-center text-center ">
+      <div className="p-8 pt-27 flex flex-col justify-center text-center ">
         <TypewriterEffect
           words={words}
           className={"dark py-4 font-extrabold"}
@@ -215,6 +221,7 @@ export default function Hacktoberfest() {
               description={contest.description}
               image={contest.image}
               link={contest.link}
+              poster={contest.poster}
             />
           </div>
         ))}
@@ -231,6 +238,7 @@ export default function Hacktoberfest() {
               description={contest.description}
               image={contest.image}
               link={contest.link}
+              poster={contest.poster}
             />
           </div>
         ))}
@@ -241,32 +249,66 @@ export default function Hacktoberfest() {
   );
 }
 
-function ContestCards({ title, description, image, link }) {
+function ContestCards({ title, description, image, link, poster }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <RevealOnScroll>
-    <div className="w-full flex flex-col sm:flex-row max-w-full text-white border rounded-lg shadow bg-[#0f0f0f] border-gray-700">
-      <div className="w-full">
-        <img
-          className="rounded-t-lg w-full h-full object-cover"
-          src={image}
-          alt=""
-        />
+      <div className="w-full flex flex-col sm:flex-row max-w-full text-white border rounded-lg shadow bg-[#0f0f0f] border-gray-700">
+        <div className="w-full">
+          <img
+            className="rounded-t-lg w-full h-full object-cover"
+            src={image}
+            alt=""
+          />
+        </div>
+        <div className="p-5 w-full">
+          <a href="#">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
+              {title}
+            </h5>
+          </a>
+          <div
+            className="mb-3 font-normal text-gray-400"
+            dangerouslySetInnerHTML={{ __html: description }}
+          ></div>
+          <div className="flex space-x-4">
+            <a href={link}>
+              <Button>Register</Button>
+            </a>
+            <Button onClick={openModal}>View Brochure</Button>
+          </div>
+        </div>
       </div>
-      <div className="p-5 w-full">
-        <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
-            {title}
-          </h5>
-        </a>
-        <div
-          className="mb-3 font-normal text-gray-400"
-          dangerouslySetInnerHTML={{ __html: description }}
-        ></div>
-        <a href={link}>
-          <Button>Register</Button>
-        </a>
-      </div>
-    </div>
+
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        className="bg-black p-4 w-[90%] h-[90%] md:w-[60%] md:h-[70%] rounded-lg shadow-xl flex justify-center items-center"
+        overlayClassName="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center"
+      >
+        <div className="relative w-full h-full flex justify-center items-center">
+          <button
+            onClick={closeModal}
+            className="absolute top-2 right-2 text-white text-2xl"
+          >
+            &times;
+          </button>
+          <img
+            className="rounded-lg max-w-full max-h-full object-contain"
+            src={poster}
+            alt="Brochure"
+          />
+        </div>
+      </Modal>
     </RevealOnScroll>
   );
 }
