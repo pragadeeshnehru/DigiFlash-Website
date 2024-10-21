@@ -10,8 +10,15 @@ const Header = () => {
 
   return (
     <header className="font-display w-full z-50 flex flex-wrap justify-between items-center py-4 px-6 md:py-4 md:px-8 transition-all duration-300 bg-transparent text-white">
-      <div className="text-3xl md:text-4xl font-bold text-center md:text-left bg-gradient-to-r bg-clip-text from-[#ff641d] to-[#02c222] text-transparent">
-        DIGIFLASH
+      <div className="flex items-center space-x-4">
+        <img
+          className="w-8 sm:w-12 md:w-16 lg:w-20"
+          src="/logo.png"
+          alt="Logo"
+        />
+        <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r bg-clip-text from-[#ffdd1d] to-[#02c222] text-transparent">
+          DIGIFLASH
+        </div>
       </div>
 
       <button
@@ -34,7 +41,7 @@ const Header = () => {
         </svg>
       </button>
 
-      {/* Full-screen overlay and menu */}
+      {/* Full-screen overlay and menu for Mobile */}
       <div
         className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-10 transition-all duration-300 ${
           isMenuOpen ? "block" : "hidden"
@@ -64,8 +71,9 @@ const Header = () => {
         </nav>
       </div>
 
-      <nav className={`hidden md:flex md:items-center md:w-auto md:space-x-10`}>
-        <ul className="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0 items-center">
+      {/* Desktop Navigation */}
+      <nav className="hidden md:flex md:items-center md:w-auto space-x-10 ml-auto">
+        <ul className="flex space-x-10 items-center">
           <li>
             <Link
               to="/"
