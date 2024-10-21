@@ -91,7 +91,7 @@ export default function Hacktoberfest() {
         <strong>Guidelines:</strong><br/>
         1. <strong>Team Size:</strong> Maximum of 2 participants per team.<br/>
         2. <strong>Presentation Time:</strong> 8-10 minutes, followed by a 2-minute Q&A session.<br/>
-        3. <strong>Format:</strong> Presentations must be in PPT format.<br/>
+        3. <strong>Format:</strong> Presentations must be in PPT format. 8-10 slides<br/>
         4. <strong>Originality:</strong> Content must be original; plagiarism will lead to disqualification.<br/>
         5. <strong>Technical Setup:</strong> Participants must bring their presentation on a USB drive or email it in advance.<br/>
         6. <strong>Judging Criteria:</strong> Evaluation will be based on content, clarity, innovation, and presentation skills.
@@ -126,8 +126,8 @@ export default function Hacktoberfest() {
         Collaborate, innovate, and showcase your technical expertise in our thrilling  Challenge! Team up with a partner and tackle three exciting rounds to prove your skills in this dynamic event.<br/><br/>
         <strong>Event Rounds:</strong><br/>
         1. <strong>Round 1 - Tech Quiz:</strong> Test your knowledge in a rapid-fire technical quiz, covering programming languages.<br/>
-        2. <strong>Round 2 - Website Game:</strong> Navigate a live website, solve puzzles, and complete challenges to demonstrate your problem-solving skills.<br/>
-        3. <strong>Round 3 - Technical Connection:</strong> Collaborate with your teammate to design and develop a technical solution to a real-world problem. Showcase your creativity, coding skills, and teamwork.<br/><br/>
+        2. <strong>Round 2 - Crossword Puzzle:</strong> In this challenge, you will navigate a crossword puzzle to test your general technical knowledge. The objective is to find the answer in the grid with the question and clues given below, ensuring that the words correctly.<br/>
+        3. <strong>Round 3 - Technical Connection:</strong> In this challenge, you will participate in a Connection Event designed to enhance your networking skills, foster collaboration, and solve problems through interactive activities. The objective is to engage with other participants, share insights, and work together to tackle challenges that promote teamwork and creativity.<br/><br/>
         <strong>Guidelines:</strong><br/>
         1. <strong>Team Size:</strong> Maximum of 2 participants.<br/>
         2. <strong>Registration:</strong> Pre-registration is required for participation.
@@ -160,12 +160,11 @@ export default function Hacktoberfest() {
     {
       title: "Frozen Pixels",
       description: `
-        Participants will be selected in a single photography round. The photo should be taken within the college based on the theme mentioned below. Photos can be uploaded to the form sent 2 days before the event. Registration is based on a first-come, first-served basis, with a maximum of 20 teams. Showcase your photographic prowess and immortalize the beauty of our college through your lens.<br/><br/>
+        Participants will be selected in a single photography round. The photo should be taken within in the college based on the theme mentioned above. The photo can be uploaded to the form which will be sent before the event. The registration is based on the First come , First serve basis. First 40 participants are allowed to participate.Showcase your photographic prowess and immortalize the beauty of our college through your lens.<br/><br/>
         <strong>Rules:</strong><br/>
         1) <strong>Submission:</strong> Participants should submit only one photo within the given deadline.<br/>
         2) <strong>Originality:</strong> All photographs must be your original work. Plagiarism will lead to disqualification.<br/>
-        3) <strong>Team Size:</strong> Teams consist of 2 participants.<br/>
-        4) <strong>Judging Criteria:</strong> Photographs will be judged based on composition, creativity, technical skill, and overall impact.<br/><br/>
+        3) <strong>Judging Criteria:</strong> Photographs will be judged based on composition, creativity, technical skill, and overall impact.<br/><br/>
         <strong>Themes:</strong><br/>
         - <strong>IT Stream:</strong> Tech and Nature<br/>
         - <strong>Core Stream:</strong> Vintage<br/>

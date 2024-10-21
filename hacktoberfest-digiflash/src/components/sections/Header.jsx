@@ -76,14 +76,6 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/legacy"
-              className="text-lg md:text-xl hover:text-gray-600 transition"
-            >
-              Legacy
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/about"
               className="text-lg md:text-xl hover:text-gray-600 transition"
             >
