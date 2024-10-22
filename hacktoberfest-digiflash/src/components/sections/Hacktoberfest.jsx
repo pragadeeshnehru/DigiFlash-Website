@@ -47,7 +47,7 @@ export default function Hacktoberfest() {
           Showcase your skills in coding, creativity, and problem-solving! Build a functional web application using the provided images and tackle real-time spot questions. Collaborate with your teammate to deliver an innovative solution in this dynamic event.<br/><br/>
           <strong>Guidelines:</strong><br/>
           1. <strong>Team Size:</strong> Individual participation.<br/>
-          2. <strong>Coding Format:</strong> Develop a web page using the provided images and any web technology (HTML, CSS, JavaScript).<br/>
+          2. <strong>Coding Format:</strong> Develop a web page using the provided images and any client side scripting languages (HTML, CSS, JavaScript).<br/>
           3. <strong>Time:</strong> 2 hours for coding, followed by presentation and Q&A session.<br/>
           4. <strong>Judging Criteria:</strong> Creativity, functionality, collaboration, and presentation.
         `,
