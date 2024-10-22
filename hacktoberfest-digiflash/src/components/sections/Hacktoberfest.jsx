@@ -88,7 +88,7 @@ export default function Hacktoberfest() {
       `,
       image: "/events/paper.jpg",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSeXpl7oSW6EVUcE7hZruEvMPgM5GfNukJZTdcBs89wJ0X6Wqw/viewform",
-      poster: "/events/posters/paper pulse.jpeg",
+      poster: "/events/posters/paper pulse.png",
     },
     {
       title: "Trace the Bug",
@@ -104,7 +104,7 @@ export default function Hacktoberfest() {
       `,
       image: "/events/bug.png",
       link: "https://docs.google.com/forms/d/e/1FAIpQLScb99Q7QX5ZhUS_Pia7jelp-owzqoYqSLf-ANGBcpJRG533hQ/viewform",
-      poster: "/events/posters/Trace the bug.jpeg",
+      poster: "/events/posters/trace the bug.jpeg",
     },
     {
       title: "Code Link",
@@ -116,7 +116,7 @@ export default function Hacktoberfest() {
       `,
       image: "/events/connect.jpg",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSdQp5VMp2zgg4pxioz2BLCoVmrzRxWyQC02S8RZCLxdq2F0qw/viewform",
-      poster: "/events/posters/code link.jpg",
+      poster: "/events/posters/code link.jpeg",
     },
   ];
 
